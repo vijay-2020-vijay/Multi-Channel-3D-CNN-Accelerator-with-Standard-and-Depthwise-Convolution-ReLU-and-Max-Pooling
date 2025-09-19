@@ -1,0 +1,14 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,,,,,,,
+D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sim_1/new/testbench.v,1758302647,verilog,,,,testbench,,,,,,,,
+D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/CNN_Accleretor.v,1758295528,verilog,,D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v,,CNN_Accleretor,,,,,,,,
+D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v,1758301734,verilog,,D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/mac9.v,,bram_dual_port1,,,,,,,,
+D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/mac9.v,1758267316,verilog,,D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/max_pool4.v,,adder;mac9,,,,,,,,
+D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/max_pool4.v,1758193121,verilog,,D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/mem_store_index.v,,max_pool4;maxi2,,,,,,,,
+D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/mem_store_index.v,1758193202,verilog,,D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/pool_pq_index.v,,mem_store_index,,,,,,,,
+D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/pool_pq_index.v,1758193052,verilog,,D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/pqindex_generetor.v,,pool_pq_index,,,,,,,,
+D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/pqindex_generetor.v,1758192929,verilog,,D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/shift_index_generetor.v,,pqindex_generetor,,,,,,,,
+D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/shift_index_generetor.v,1758192767,verilog,,D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sim_1/new/testbench.v,,shift_index_generetor,,,,,,,,

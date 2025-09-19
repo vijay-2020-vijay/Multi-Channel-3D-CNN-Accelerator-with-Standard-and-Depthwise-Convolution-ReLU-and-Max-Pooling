@@ -1,0 +1,1068 @@
+
+*** Running vivado
+    with args -log CNN_Accleretor.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CNN_Accleretor.tcl
+
+
+WARNING: Default location for XILINX_HLS not found
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Sat Sep 20 00:59:56 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source CNN_Accleretor.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 389.086 ; gain = 88.551
+Command: read_checkpoint -auto_incremental -incremental D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/utils_1/imports/synth_1/CNN_Accleretor.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/utils_1/imports/synth_1/CNN_Accleretor.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top CNN_Accleretor -part xc7a200tsbv484-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 3136
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 871.254 ; gain = 470.141
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CNN_Accleretor' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/CNN_Accleretor.v:7]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'karnel_matrix[0]' is not inferred as ram due to incorrect usage [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/CNN_Accleretor.v:23]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'karnel_matrix[1]' is not inferred as ram due to incorrect usage [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/CNN_Accleretor.v:23]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'karnel_matrix[2]' is not inferred as ram due to incorrect usage [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/CNN_Accleretor.v:23]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'karnel_matrix[3]' is not inferred as ram due to incorrect usage [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/CNN_Accleretor.v:23]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'karnel_matrix[4]' is not inferred as ram due to incorrect usage [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/CNN_Accleretor.v:23]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'karnel_matrix[5]' is not inferred as ram due to incorrect usage [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/CNN_Accleretor.v:23]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'karnel_matrix[6]' is not inferred as ram due to incorrect usage [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/CNN_Accleretor.v:23]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'karnel_matrix[7]' is not inferred as ram due to incorrect usage [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/CNN_Accleretor.v:23]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'karnel_matrix[8]' is not inferred as ram due to incorrect usage [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/CNN_Accleretor.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bram_dual_port1' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:3]
+	Parameter MA bound to: 18 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'D:/memorey test file for cnn_accleretor/pixels_channelwise_amp_hex.txt' is read successfully [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'bram_dual_port1' (0#1) [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:3]
+INFO: [Synth 8-6157] synthesizing module 'shift_index_generetor' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/shift_index_generetor.v:4]
+	Parameter n bound to: 256 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/shift_index_generetor.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'shift_index_generetor' (0#1) [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/shift_index_generetor.v:4]
+INFO: [Synth 8-6157] synthesizing module 'mac9' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/mac9.v:2]
+INFO: [Synth 8-6157] synthesizing module 'adder' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/mac9.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/mac9.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'mac9' (0#1) [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/mac9.v:2]
+INFO: [Synth 8-6157] synthesizing module 'pqindex_generetor' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/pqindex_generetor.v:3]
+	Parameter n bound to: 256 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/pqindex_generetor.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/pqindex_generetor.v:93]
+INFO: [Synth 8-6155] done synthesizing module 'pqindex_generetor' (0#1) [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/pqindex_generetor.v:3]
+INFO: [Synth 8-6157] synthesizing module 'pool_pq_index' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/pool_pq_index.v:3]
+	Parameter n bound to: 256 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/pool_pq_index.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/pool_pq_index.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'pool_pq_index' (0#1) [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/pool_pq_index.v:3]
+INFO: [Synth 8-6157] synthesizing module 'max_pool4' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/max_pool4.v:3]
+INFO: [Synth 8-6157] synthesizing module 'maxi2' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/max_pool4.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'maxi2' (0#1) [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/max_pool4.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'max_pool4' (0#1) [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/max_pool4.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mem_store_index' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/mem_store_index.v:4]
+	Parameter n bound to: 256 - type: integer 
+	Parameter MA bound to: 18 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/mem_store_index.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'mem_store_index' (0#1) [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/mem_store_index.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/CNN_Accleretor.v:187]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/CNN_Accleretor.v:376]
+INFO: [Synth 8-6155] done synthesizing module 'CNN_Accleretor' (0#1) [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/CNN_Accleretor.v:7]
+WARNING: [Synth 8-11357] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  line_reg with 24576 registers
+WARNING: [Synth 8-6014] Unused sequential element multi_ch_multi_fil_complete_reg was removed.  [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/CNN_Accleretor.v:183]
+WARNING: [Synth 8-6014] Unused sequential element multi_ch_multi_fil_complete_reg was removed.  [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/CNN_Accleretor.v:417]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1734.965 ; gain = 1333.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:44 . Memory (MB): peak = 1734.965 ; gain = 1333.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbv484-3
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tsbv484-3
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:45 . Memory (MB): peak = 1734.965 ; gain = 1333.852
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state4_reg' in module 'shift_index_generetor'
+INFO: [Synth 8-802] inferred FSM for state register 'state1_reg' in module 'pqindex_generetor'
+INFO: [Synth 8-802] inferred FSM for state register 'state2_reg' in module 'pool_pq_index'
+INFO: [Synth 8-802] inferred FSM for state register 'state3_reg' in module 'mem_store_index'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'CNN_Accleretor'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                             0001 |                            00000
+                      s1 |                             0010 |                            00001
+                      s2 |                             0100 |                            00010
+                      s3 |                             1000 |                            00011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state4_reg' using encoding 'one-hot' in module 'shift_index_generetor'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                              000 |                             0000
+                      s1 |                              001 |                             0001
+                      s2 |                              010 |                             0010
+                      s3 |                              011 |                             0011
+                      s4 |                              100 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state1_reg' using encoding 'sequential' in module 'pqindex_generetor'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                            00001 |                              000
+                      s1 |                            00010 |                              001
+                      s4 |                            00100 |                              100
+                      s2 |                            01000 |                              010
+                      s3 |                            10000 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state2_reg' using encoding 'one-hot' in module 'pool_pq_index'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                              000 |                              000
+                      s1 |                              001 |                              001
+                      s2 |                              010 |                              010
+                      s5 |                              011 |                              101
+                      s3 |                              100 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state3_reg' using encoding 'sequential' in module 'mem_store_index'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                         00000001 |                             0000
+                      s1 |                         00000010 |                             0001
+                      s2 |                         00000100 |                             0010
+                      s3 |                         00001000 |                             0011
+                      s4 |                         00010000 |                             0100
+                      s5 |                         00100000 |                             0101
+                      s7 |                         01000000 |                             0111
+                      s6 |                         10000000 |                             0110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'CNN_Accleretor'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:04 ; elapsed = 00:01:37 . Memory (MB): peak = 1734.965 ; gain = 1333.852
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input   32 Bit       Adders := 2     
+	   2 Input   32 Bit       Adders := 3     
+	   2 Input   19 Bit       Adders := 1     
+	   2 Input   18 Bit       Adders := 9     
+	   2 Input   16 Bit       Adders := 2     
+	   2 Input   11 Bit       Adders := 14    
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 832   
+	               18 Bit    Registers := 8     
+	               11 Bit    Registers := 16    
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 9     
+	                1 Bit    Registers := 15    
++---Multipliers : 
+	              32x32  Multipliers := 9     
++---RAMs : 
+	            8192K Bit	(262144 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   3 Input   32 Bit        Muxes := 3328  
+	   2 Input   32 Bit        Muxes := 5     
+	   8 Input   32 Bit        Muxes := 4     
+	   2 Input   18 Bit        Muxes := 3     
+	   8 Input   18 Bit        Muxes := 4     
+	   5 Input   18 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 3     
+	   8 Input   16 Bit        Muxes := 2     
+	   5 Input   11 Bit        Muxes := 10    
+	   4 Input   11 Bit        Muxes := 6     
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 5     
+	   8 Input    7 Bit        Muxes := 1     
+	   8 Input    6 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 6     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 6     
+	   5 Input    3 Bit        Muxes := 3     
+	  18 Input    3 Bit        Muxes := 1     
+	   8 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 5     
+	   2 Input    2 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 18    
+	   2 Input    1 Bit        Muxes := 5412  
+	   8 Input    1 Bit        Muxes := 807   
+	   4 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'mp4/complete_max_reg__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/max_pool4.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/max_pool4.v:22]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/max_pool4.v:22]
+INFO: [Synth 8-3886] merging instance 'ppi/a0_reg[0]' (FDE) to 'ppi/a0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ppi/a0_reg[1]' (FDE) to 'ppi/a0_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ppi/\a0_reg[2] )
+INFO: [Synth 8-3886] merging instance 'pq_ig/q_reg[1]' (FDRE) to 'pq_ig/p_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pq_ig/q_reg[2]' (FDRE) to 'pq_ig/p_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pq_ig/\p_reg[2] )
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 1. Recommended levels of pipeline registers is 4. [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/mac9.v:34]
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 2. Recommended levels of pipeline registers is 4. [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/mac9.v:33]
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 2. Recommended levels of pipeline registers is 4. [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/mac9.v:31]
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 2. Recommended levels of pipeline registers is 4. [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/mac9.v:32]
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 2. Recommended levels of pipeline registers is 4. [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/mac9.v:30]
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 2. Recommended levels of pipeline registers is 4. [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/mac9.v:29]
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 2. Recommended levels of pipeline registers is 4. [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/mac9.v:27]
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 2. Recommended levels of pipeline registers is 4. [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/mac9.v:28]
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 2. Recommended levels of pipeline registers is 4. [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/mac9.v:26]
+DSP Report: Generating DSP P80, operation Mode is: A*B.
+DSP Report: operator P80 is absorbed into DSP P80.
+DSP Report: operator P80 is absorbed into DSP P80.
+DSP Report: Generating DSP P8_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register P8_reg is absorbed into DSP P8_reg.
+DSP Report: operator P80 is absorbed into DSP P8_reg.
+DSP Report: operator P80 is absorbed into DSP P8_reg.
+DSP Report: Generating DSP P80, operation Mode is: A*B.
+DSP Report: operator P80 is absorbed into DSP P80.
+DSP Report: operator P80 is absorbed into DSP P80.
+DSP Report: Generating DSP P8_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register P8_reg is absorbed into DSP P8_reg.
+DSP Report: operator P80 is absorbed into DSP P8_reg.
+DSP Report: operator P80 is absorbed into DSP P8_reg.
+DSP Report: Generating DSP P70, operation Mode is: A*B.
+DSP Report: operator P70 is absorbed into DSP P70.
+DSP Report: operator P70 is absorbed into DSP P70.
+DSP Report: Generating DSP P7_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register P7_reg is absorbed into DSP P7_reg.
+DSP Report: operator P70 is absorbed into DSP P7_reg.
+DSP Report: operator P70 is absorbed into DSP P7_reg.
+DSP Report: Generating DSP P70, operation Mode is: A*B.
+DSP Report: operator P70 is absorbed into DSP P70.
+DSP Report: operator P70 is absorbed into DSP P70.
+DSP Report: Generating DSP P7_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register P7_reg is absorbed into DSP P7_reg.
+DSP Report: operator P70 is absorbed into DSP P7_reg.
+DSP Report: operator P70 is absorbed into DSP P7_reg.
+DSP Report: Generating DSP P50, operation Mode is: A*B.
+DSP Report: operator P50 is absorbed into DSP P50.
+DSP Report: operator P50 is absorbed into DSP P50.
+DSP Report: Generating DSP P5_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register P5_reg is absorbed into DSP P5_reg.
+DSP Report: operator P50 is absorbed into DSP P5_reg.
+DSP Report: operator P50 is absorbed into DSP P5_reg.
+DSP Report: Generating DSP P50, operation Mode is: A*B.
+DSP Report: operator P50 is absorbed into DSP P50.
+DSP Report: operator P50 is absorbed into DSP P50.
+DSP Report: Generating DSP P5_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register P5_reg is absorbed into DSP P5_reg.
+DSP Report: operator P50 is absorbed into DSP P5_reg.
+DSP Report: operator P50 is absorbed into DSP P5_reg.
+DSP Report: Generating DSP P60, operation Mode is: A*B.
+DSP Report: operator P60 is absorbed into DSP P60.
+DSP Report: operator P60 is absorbed into DSP P60.
+DSP Report: Generating DSP P6_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register P6_reg is absorbed into DSP P6_reg.
+DSP Report: operator P60 is absorbed into DSP P6_reg.
+DSP Report: operator P60 is absorbed into DSP P6_reg.
+DSP Report: Generating DSP P60, operation Mode is: A*B.
+DSP Report: operator P60 is absorbed into DSP P60.
+DSP Report: operator P60 is absorbed into DSP P60.
+DSP Report: Generating DSP P6_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register P6_reg is absorbed into DSP P6_reg.
+DSP Report: operator P60 is absorbed into DSP P6_reg.
+DSP Report: operator P60 is absorbed into DSP P6_reg.
+DSP Report: Generating DSP P40, operation Mode is: A*B.
+DSP Report: operator P40 is absorbed into DSP P40.
+DSP Report: operator P40 is absorbed into DSP P40.
+DSP Report: Generating DSP P4_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register P4_reg is absorbed into DSP P4_reg.
+DSP Report: operator P40 is absorbed into DSP P4_reg.
+DSP Report: operator P40 is absorbed into DSP P4_reg.
+DSP Report: Generating DSP P40, operation Mode is: A*B.
+DSP Report: operator P40 is absorbed into DSP P40.
+DSP Report: operator P40 is absorbed into DSP P40.
+DSP Report: Generating DSP P4_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register P4_reg is absorbed into DSP P4_reg.
+DSP Report: operator P40 is absorbed into DSP P4_reg.
+DSP Report: operator P40 is absorbed into DSP P4_reg.
+DSP Report: Generating DSP P30, operation Mode is: A*B.
+DSP Report: operator P30 is absorbed into DSP P30.
+DSP Report: operator P30 is absorbed into DSP P30.
+DSP Report: Generating DSP P3_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register P3_reg is absorbed into DSP P3_reg.
+DSP Report: operator P30 is absorbed into DSP P3_reg.
+DSP Report: operator P30 is absorbed into DSP P3_reg.
+DSP Report: Generating DSP P30, operation Mode is: A*B.
+DSP Report: operator P30 is absorbed into DSP P30.
+DSP Report: operator P30 is absorbed into DSP P30.
+DSP Report: Generating DSP P3_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register P3_reg is absorbed into DSP P3_reg.
+DSP Report: operator P30 is absorbed into DSP P3_reg.
+DSP Report: operator P30 is absorbed into DSP P3_reg.
+DSP Report: Generating DSP P10, operation Mode is: A*B.
+DSP Report: operator P10 is absorbed into DSP P10.
+DSP Report: operator P10 is absorbed into DSP P10.
+DSP Report: Generating DSP P1_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register P1_reg is absorbed into DSP P1_reg.
+DSP Report: operator P10 is absorbed into DSP P1_reg.
+DSP Report: operator P10 is absorbed into DSP P1_reg.
+DSP Report: Generating DSP P10, operation Mode is: A*B.
+DSP Report: operator P10 is absorbed into DSP P10.
+DSP Report: operator P10 is absorbed into DSP P10.
+DSP Report: Generating DSP P1_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register P1_reg is absorbed into DSP P1_reg.
+DSP Report: operator P10 is absorbed into DSP P1_reg.
+DSP Report: operator P10 is absorbed into DSP P1_reg.
+DSP Report: Generating DSP P20, operation Mode is: A*B.
+DSP Report: operator P20 is absorbed into DSP P20.
+DSP Report: operator P20 is absorbed into DSP P20.
+DSP Report: Generating DSP P2_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register P2_reg is absorbed into DSP P2_reg.
+DSP Report: operator P20 is absorbed into DSP P2_reg.
+DSP Report: operator P20 is absorbed into DSP P2_reg.
+DSP Report: Generating DSP P20, operation Mode is: A*B.
+DSP Report: operator P20 is absorbed into DSP P20.
+DSP Report: operator P20 is absorbed into DSP P20.
+DSP Report: Generating DSP P2_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register P2_reg is absorbed into DSP P2_reg.
+DSP Report: operator P20 is absorbed into DSP P2_reg.
+DSP Report: operator P20 is absorbed into DSP P2_reg.
+DSP Report: Generating DSP P00, operation Mode is: A*B.
+DSP Report: operator P00 is absorbed into DSP P00.
+DSP Report: operator P00 is absorbed into DSP P00.
+DSP Report: Generating DSP P0_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register P0_reg is absorbed into DSP P0_reg.
+DSP Report: operator P00 is absorbed into DSP P0_reg.
+DSP Report: operator P00 is absorbed into DSP P0_reg.
+DSP Report: Generating DSP P00, operation Mode is: A*B.
+DSP Report: operator P00 is absorbed into DSP P00.
+DSP Report: operator P00 is absorbed into DSP P00.
+DSP Report: Generating DSP P0_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register P0_reg is absorbed into DSP P0_reg.
+DSP Report: operator P00 is absorbed into DSP P0_reg.
+DSP Report: operator P00 is absorbed into DSP P0_reg.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (ch_convolution_reg)
+WARNING: [Synth 8-3332] Sequential element (P8_reg[47]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[46]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[45]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[44]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[43]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[42]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[41]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[40]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[39]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[38]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[37]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[36]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[35]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[34]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[33]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[32]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[31]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[30]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[29]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[28]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[27]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[26]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[25]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[24]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[23]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[22]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[21]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[20]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[19]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[18]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[17]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[16]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[15]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[47]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[46]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[45]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[44]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[43]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[42]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[41]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[40]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[39]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[38]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[37]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[36]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[35]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[34]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[33]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[32]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[31]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[30]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[29]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[28]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[27]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[26]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[25]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[24]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[23]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[22]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[21]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[20]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[19]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[18]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P8_reg[17]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[47]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[46]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[45]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[44]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[43]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[42]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[41]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[40]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[39]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[38]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[37]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[36]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[35]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[34]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[33]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[32]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[31]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[30]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[29]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[28]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[27]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[26]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[25]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[24]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[23]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[22]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[21]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[20]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[19]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[18]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[17]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[16]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[15]) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[47]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[46]__0) is unused and will be removed from module mac9.
+WARNING: [Synth 8-3332] Sequential element (P7_reg[45]__0) is unused and will be removed from module mac9.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3971] The signal "bram_inst/mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3886] merging instance 'din_a_reg[0]' (FDRE) to 'din_a_reg[1]'
+INFO: [Synth 8-3886] merging instance 'din_a_reg[1]' (FDRE) to 'din_a_reg[2]'
+INFO: [Synth 8-3886] merging instance 'din_a_reg[2]' (FDRE) to 'din_a_reg[3]'
+INFO: [Synth 8-3886] merging instance 'din_a_reg[3]' (FDRE) to 'din_a_reg[4]'
+INFO: [Synth 8-3886] merging instance 'din_a_reg[4]' (FDRE) to 'din_a_reg[5]'
+INFO: [Synth 8-3886] merging instance 'din_a_reg[5]' (FDRE) to 'din_a_reg[6]'
+INFO: [Synth 8-3886] merging instance 'din_a_reg[6]' (FDRE) to 'din_a_reg[7]'
+INFO: [Synth 8-3886] merging instance 'din_a_reg[7]' (FDRE) to 'din_a_reg[8]'
+INFO: [Synth 8-3886] merging instance 'din_a_reg[8]' (FDRE) to 'din_a_reg[9]'
+INFO: [Synth 8-3886] merging instance 'din_a_reg[9]' (FDRE) to 'din_a_reg[10]'
+INFO: [Synth 8-3886] merging instance 'din_a_reg[10]' (FDRE) to 'din_a_reg[11]'
+INFO: [Synth 8-3886] merging instance 'din_a_reg[11]' (FDRE) to 'din_a_reg[12]'
+INFO: [Synth 8-3886] merging instance 'din_a_reg[12]' (FDRE) to 'din_a_reg[13]'
+INFO: [Synth 8-3886] merging instance 'din_a_reg[13]' (FDRE) to 'din_a_reg[14]'
+INFO: [Synth 8-3886] merging instance 'din_a_reg[14]' (FDRE) to 'din_a_reg[15]'
+INFO: [Synth 8-3886] merging instance 'din_a_reg[15]' (FDRE) to 'din_a_reg[16]'
+INFO: [Synth 8-3886] merging instance 'din_a_reg[16]' (FDRE) to 'din_a_reg[17]'
+INFO: [Synth 8-3886] merging instance 'din_a_reg[17]' (FDRE) to 'din_a_reg[18]'
+INFO: [Synth 8-3886] merging instance 'din_a_reg[18]' (FDRE) to 'din_a_reg[19]'
+INFO: [Synth 8-3886] merging instance 'din_a_reg[19]' (FDRE) to 'din_a_reg[20]'
+INFO: [Synth 8-3886] merging instance 'din_a_reg[20]' (FDRE) to 'din_a_reg[21]'
+INFO: [Synth 8-3886] merging instance 'din_a_reg[21]' (FDRE) to 'din_a_reg[22]'
+INFO: [Synth 8-3886] merging instance 'din_a_reg[22]' (FDRE) to 'din_a_reg[23]'
+INFO: [Synth 8-3886] merging instance 'din_a_reg[23]' (FDRE) to 'din_a_reg[24]'
+INFO: [Synth 8-3886] merging instance 'din_a_reg[24]' (FDRE) to 'din_a_reg[25]'
+INFO: [Synth 8-3886] merging instance 'din_a_reg[25]' (FDRE) to 'din_a_reg[26]'
+INFO: [Synth 8-3886] merging instance 'din_a_reg[26]' (FDRE) to 'din_a_reg[27]'
+INFO: [Synth 8-3886] merging instance 'din_a_reg[27]' (FDRE) to 'din_a_reg[28]'
+INFO: [Synth 8-3886] merging instance 'din_a_reg[28]' (FDRE) to 'din_a_reg[29]'
+INFO: [Synth 8-3886] merging instance 'din_a_reg[29]' (FDRE) to 'din_a_reg[30]'
+INFO: [Synth 8-3886] merging instance 'din_a_reg[30]' (FDRE) to 'din_a_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\din_a_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (we_a_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rellu_final_reg[31] )
+INFO: [Synth 8-3886] merging instance 'sig/p0_reg[0]' (FDE) to 'sig/p6_reg[1]'
+INFO: [Synth 8-3886] merging instance 'sig/p3_reg[1]' (FDE) to 'sig/p6_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sig/p0_reg[1]' (FDE) to 'sig/p3_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sig/p6_reg[2]' (FDE) to 'sig/p0_reg[2]'
+INFO: [Synth 8-3886] merging instance 'sig/p3_reg[2]' (FDE) to 'sig/p0_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sig/\p0_reg[2] )
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__62' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__30' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__30' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__29'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__31' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__29'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__32' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__0' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__0' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__29'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__33' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__1' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__1' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__29'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__34' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__2' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__2' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__29'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__35' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__3' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__3' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__29'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__36' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__4' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__4' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__29'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__37' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__5' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__5' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__29'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__38' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__6' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__6' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__29'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__39' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__7' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__7' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__29'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__40' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__8' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__8' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__29'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__41' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__9' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__9' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__29'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__42' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__10' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__10' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__29'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__43' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__11' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__11' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__29'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__44' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__12' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__12' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__29'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__45' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__13' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__13' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__29'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__46' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__14' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__14' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__29'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__47' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__15' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__15' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__29'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__48' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__16' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__16' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__29'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__49' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__17' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_1__61'
+INFO: [Synth 8-3886] merging instance 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__17' (FD) to 'bram_inst/i_0/mem_reg_mux_sel_a_pos_0__29'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:35 ; elapsed = 00:07:24 . Memory (MB): peak = 1875.895 ; gain = 1474.781
+---------------------------------------------------------------------------------
+ Sort Area is CNN_Accleretor__GB23 P00_0 : 0 0 : 3101 5802 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P00_0 : 0 1 : 2701 5802 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P10_8 : 0 0 : 3101 5802 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P10_8 : 0 1 : 2701 5802 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P20_6 : 0 0 : 3101 5802 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P20_6 : 0 1 : 2701 5802 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P30_a : 0 0 : 3101 5802 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P30_a : 0 1 : 2701 5802 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P40_c : 0 0 : 3101 5802 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P40_c : 0 1 : 2701 5802 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P50_10 : 0 0 : 3101 5802 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P50_10 : 0 1 : 2701 5802 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P60_e : 0 0 : 3101 5802 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P60_e : 0 1 : 2701 5802 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P70_12 : 0 0 : 3101 5802 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P70_12 : 0 1 : 2701 5802 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P80_14 : 0 0 : 3101 5802 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P80_14 : 0 1 : 2701 5802 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P00_3 : 0 0 : 2634 5167 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P00_3 : 0 1 : 2533 5167 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P10_9 : 0 0 : 2634 5167 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P10_9 : 0 1 : 2533 5167 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P20_7 : 0 0 : 2634 5167 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P20_7 : 0 1 : 2533 5167 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P30_b : 0 0 : 2634 5167 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P30_b : 0 1 : 2533 5167 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P40_d : 0 0 : 2634 5167 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P40_d : 0 1 : 2533 5167 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P50_11 : 0 0 : 2634 5167 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P50_11 : 0 1 : 2533 5167 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P60_f : 0 0 : 2634 5167 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P60_f : 0 1 : 2533 5167 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P70_13 : 0 0 : 2634 5167 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P70_13 : 0 1 : 2533 5167 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P80_15 : 0 0 : 2634 5167 : Used 1 time 0
+ Sort Area is CNN_Accleretor__GB23 P80_15 : 0 1 : 2533 5167 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|bram_inst   | mem_reg    | 256 K x 32(READ_FIRST) | W | R | 256 K x 32(READ_FIRST) | W | R | Port A and B     | 0      | 256    | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mac9        | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac9        | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac9        | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac9        | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac9        | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac9        | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac9        | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac9        | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac9        | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac9        | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac9        | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac9        | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac9        | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac9        | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac9        | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac9        | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac9        | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac9        | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac9        | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:04:44 ; elapsed = 00:07:37 . Memory (MB): peak = 1875.895 ; gain = 1474.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|bram_inst   | mem_reg    | 256 K x 32(READ_FIRST) | W | R | 256 K x 32(READ_FIRST) | W | R | Port A and B     | 0      | 256    | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_16 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_16 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_17 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_17 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_18 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_18 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_19 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_19 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_20 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_20 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_21 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_21 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_22 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_22 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_23 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_23 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_24 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_24 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_25 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_25 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_26 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_26 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_27 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_27 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_28 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_28 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_29 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_29 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_30 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_30 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_31 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_1_31 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_16 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_16 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_17 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_24/bram_inst/mem_reg_3_17 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Common 17-14] Message 'Synth 8-7052' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:05:22 ; elapsed = 00:08:19 . Memory (MB): peak = 1901.297 ; gain = 1500.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:05:44 ; elapsed = 00:08:46 . Memory (MB): peak = 1901.297 ; gain = 1500.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:44 ; elapsed = 00:08:47 . Memory (MB): peak = 1901.297 ; gain = 1500.184
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin complete10 with 1st driver pin 'sig/complete10_reg__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/shift_index_generetor.v:18]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin complete10 with 2nd driver pin 'sig/complete10_reg/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/shift_index_generetor.v:106]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin complete00 with 1st driver pin 'sig/complete00_reg__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/shift_index_generetor.v:18]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin complete00 with 2nd driver pin 'sig/complete00_reg/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/shift_index_generetor.v:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin complete20 with 1st driver pin 'sig/complete20_reg__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/shift_index_generetor.v:19]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin complete20 with 2nd driver pin 'sig/complete20_reg/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/shift_index_generetor.v:103]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[31] with 1st driver pin 'bram_inst/temp2_reg[31]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[31] with 2nd driver pin 'bram_inst/temp2_reg[31]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[30] with 1st driver pin 'bram_inst/temp2_reg[30]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[30] with 2nd driver pin 'bram_inst/temp2_reg[30]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[29] with 1st driver pin 'bram_inst/temp2_reg[29]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[29] with 2nd driver pin 'bram_inst/temp2_reg[29]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[28] with 1st driver pin 'bram_inst/temp2_reg[28]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[28] with 2nd driver pin 'bram_inst/temp2_reg[28]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[27] with 1st driver pin 'bram_inst/temp2_reg[27]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[27] with 2nd driver pin 'bram_inst/temp2_reg[27]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[26] with 1st driver pin 'bram_inst/temp2_reg[26]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[26] with 2nd driver pin 'bram_inst/temp2_reg[26]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[25] with 1st driver pin 'bram_inst/temp2_reg[25]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[25] with 2nd driver pin 'bram_inst/temp2_reg[25]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[24] with 1st driver pin 'bram_inst/temp2_reg[24]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[24] with 2nd driver pin 'bram_inst/temp2_reg[24]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[23] with 1st driver pin 'bram_inst/temp2_reg[23]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[23] with 2nd driver pin 'bram_inst/temp2_reg[23]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[22] with 1st driver pin 'bram_inst/temp2_reg[22]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[22] with 2nd driver pin 'bram_inst/temp2_reg[22]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[21] with 1st driver pin 'bram_inst/temp2_reg[21]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[21] with 2nd driver pin 'bram_inst/temp2_reg[21]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[20] with 1st driver pin 'bram_inst/temp2_reg[20]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[20] with 2nd driver pin 'bram_inst/temp2_reg[20]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[19] with 1st driver pin 'bram_inst/temp2_reg[19]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[19] with 2nd driver pin 'bram_inst/temp2_reg[19]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[18] with 1st driver pin 'bram_inst/temp2_reg[18]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[18] with 2nd driver pin 'bram_inst/temp2_reg[18]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[17] with 1st driver pin 'bram_inst/temp2_reg[17]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[17] with 2nd driver pin 'bram_inst/temp2_reg[17]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[16] with 1st driver pin 'bram_inst/temp2_reg[16]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[16] with 2nd driver pin 'bram_inst/temp2_reg[16]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[15] with 1st driver pin 'bram_inst/temp2_reg[15]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[15] with 2nd driver pin 'bram_inst/temp2_reg[15]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[14] with 1st driver pin 'bram_inst/temp2_reg[14]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[14] with 2nd driver pin 'bram_inst/temp2_reg[14]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[13] with 1st driver pin 'bram_inst/temp2_reg[13]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[13] with 2nd driver pin 'bram_inst/temp2_reg[13]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[12] with 1st driver pin 'bram_inst/temp2_reg[12]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[12] with 2nd driver pin 'bram_inst/temp2_reg[12]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[11] with 1st driver pin 'bram_inst/temp2_reg[11]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[11] with 2nd driver pin 'bram_inst/temp2_reg[11]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[10] with 1st driver pin 'bram_inst/temp2_reg[10]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[10] with 2nd driver pin 'bram_inst/temp2_reg[10]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[9] with 1st driver pin 'bram_inst/temp2_reg[9]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[9] with 2nd driver pin 'bram_inst/temp2_reg[9]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[8] with 1st driver pin 'bram_inst/temp2_reg[8]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[8] with 2nd driver pin 'bram_inst/temp2_reg[8]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[7] with 1st driver pin 'bram_inst/temp2_reg[7]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[7] with 2nd driver pin 'bram_inst/temp2_reg[7]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[6] with 1st driver pin 'bram_inst/temp2_reg[6]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[6] with 2nd driver pin 'bram_inst/temp2_reg[6]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[5] with 1st driver pin 'bram_inst/temp2_reg[5]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[5] with 2nd driver pin 'bram_inst/temp2_reg[5]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[4] with 1st driver pin 'bram_inst/temp2_reg[4]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[4] with 2nd driver pin 'bram_inst/temp2_reg[4]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[3] with 1st driver pin 'bram_inst/temp2_reg[3]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[3] with 2nd driver pin 'bram_inst/temp2_reg[3]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[2] with 1st driver pin 'bram_inst/temp2_reg[2]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[2] with 2nd driver pin 'bram_inst/temp2_reg[2]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[1] with 1st driver pin 'bram_inst/temp2_reg[1]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[1] with 2nd driver pin 'bram_inst/temp2_reg[1]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[0] with 1st driver pin 'bram_inst/temp2_reg[0]__0/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:34]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp2[0] with 2nd driver pin 'bram_inst/temp2_reg[0]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp1[31] with 1st driver pin 'bram_inst/dout_b[31]_i_9/O' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:18]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp1[31] with 2nd driver pin 'bram_inst/temp1_reg[31]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp1[30] with 1st driver pin 'bram_inst/dout_b[31]_i_2/O' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:18]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp1[30] with 2nd driver pin 'bram_inst/temp1_reg[30]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp1[29] with 1st driver pin 'bram_inst/dout_b[31]_i_3/O' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:18]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp1[29] with 2nd driver pin 'bram_inst/temp1_reg[29]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp1[28] with 1st driver pin 'bram_inst/dout_b[31]_i_4/O' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:18]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp1[28] with 2nd driver pin 'bram_inst/temp1_reg[28]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp1[27] with 1st driver pin 'bram_inst/dout_b[27]_i_2/O' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:18]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp1[27] with 2nd driver pin 'bram_inst/temp1_reg[27]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp1[26] with 1st driver pin 'bram_inst/dout_b[27]_i_3/O' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:18]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp1[26] with 2nd driver pin 'bram_inst/temp1_reg[26]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp1[25] with 1st driver pin 'bram_inst/dout_b[27]_i_4/O' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:18]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp1[25] with 2nd driver pin 'bram_inst/temp1_reg[25]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp1[24] with 1st driver pin 'bram_inst/dout_b[27]_i_5/O' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:18]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp1[24] with 2nd driver pin 'bram_inst/temp1_reg[24]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp1[23] with 1st driver pin 'bram_inst/dout_b[23]_i_2/O' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:18]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp1[23] with 2nd driver pin 'bram_inst/temp1_reg[23]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp1[22] with 1st driver pin 'bram_inst/dout_b[23]_i_3/O' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:18]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp1[22] with 2nd driver pin 'bram_inst/temp1_reg[22]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp1[21] with 1st driver pin 'bram_inst/dout_b[23]_i_4/O' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:18]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp1[21] with 2nd driver pin 'bram_inst/temp1_reg[21]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp1[20] with 1st driver pin 'bram_inst/dout_b[23]_i_5/O' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:18]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp1[20] with 2nd driver pin 'bram_inst/temp1_reg[20]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp1[19] with 1st driver pin 'bram_inst/dout_b[19]_i_2/O' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:18]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp1[19] with 2nd driver pin 'bram_inst/temp1_reg[19]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp1[18] with 1st driver pin 'bram_inst/dout_b[19]_i_3/O' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:18]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin temp1[18] with 2nd driver pin 'bram_inst/temp1_reg[18]/Q' [D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v:45]
+INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|       67|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:48 ; elapsed = 00:08:50 . Memory (MB): peak = 1901.297 ; gain = 1500.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:48 ; elapsed = 00:08:51 . Memory (MB): peak = 1901.297 ; gain = 1500.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:53 ; elapsed = 00:08:56 . Memory (MB): peak = 1901.297 ; gain = 1500.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:53 ; elapsed = 00:08:56 . Memory (MB): peak = 1901.297 ; gain = 1500.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mac9        | (A*B)'          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | A*B             | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac9        | (PCIN>>17+A*B)' | 0      | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | (A*B)'          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | A*B             | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac9        | (PCIN>>17+A*B)' | 0      | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | (A*B)'          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | A*B             | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac9        | (PCIN>>17+A*B)' | 0      | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | (A*B)'          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | A*B             | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac9        | (PCIN>>17+A*B)' | 0      | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | (A*B)'          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | A*B             | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac9        | (PCIN>>17+A*B)' | 0      | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | (A*B)'          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | A*B             | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac9        | (PCIN>>17+A*B)' | 0      | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | (A*B)'          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | A*B             | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac9        | (PCIN>>17+A*B)' | 0      | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | (A*B)'          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | A*B             | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac9        | (PCIN>>17+A*B)' | 0      | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | (A*B)'          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac9        | A*B             | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac9        | (PCIN>>17+A*B)' | 0      | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |   144|
+|3     |DSP48E1  |    27|
+|4     |LUT1     |    21|
+|5     |LUT2     |  1434|
+|6     |LUT3     |   396|
+|7     |LUT4     |   567|
+|8     |LUT5     | 74877|
+|9     |LUT6     | 61515|
+|10    |MUXF7    | 14144|
+|11    |MUXF8    |  7072|
+|12    |RAMB36E1 |   256|
+|13    |FDRE     | 26916|
+|14    |FDSE     |    15|
+|15    |IBUF     |    56|
+|16    |OBUF     |     4|
++------+---------+------+
+
+Report Instance Areas: 
++------+------------+----------------------+-------+
+|      |Instance    |Module                |Cells  |
++------+------------+----------------------+-------+
+|1     |top         |                      | 187445|
+|2     |  mp4       |max_pool4             |    397|
+|3     |    m1      |maxi2                 |     68|
+|4     |    m2      |maxi2_0               |     68|
+|5     |    m3      |maxi2_1               |     68|
+|6     |  ppi       |pool_pq_index         |    111|
+|7     |  pq_ig     |pqindex_generetor     |    156|
+|8     |  MAC       |mac9                  |   1018|
+|9     |  msi       |mem_store_index       |    111|
+|10    |  sig       |shift_index_generetor |    219|
+|11    |  bram_inst |bram_dual_port1       |    649|
++------+------------+----------------------+-------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:53 ; elapsed = 00:08:56 . Memory (MB): peak = 1901.297 ; gain = 1500.184
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 137 critical warnings and 113 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:53 ; elapsed = 00:09:11 . Memory (MB): peak = 1901.297 ; gain = 1500.184
+Synthesis Optimization Complete : Time (s): cpu = 00:05:53 ; elapsed = 00:09:11 . Memory (MB): peak = 1901.297 ; gain = 1500.184
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2025.930 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 21643 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'CNN_Accleretor' is not ideal for floorplanning, since the cellview 'CNN_Accleretor' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 2205.242 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 8047b15d
+INFO: [Common 17-83] Releasing license: Synthesis
+278 Infos, 115 Warnings, 101 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:06:24 ; elapsed = 00:10:01 . Memory (MB): peak = 2205.242 ; gain = 1811.355
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.375 . Memory (MB): peak = 2205.242 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.runs/synth_1/CNN_Accleretor.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:26 ; elapsed = 00:01:49 . Memory (MB): peak = 2205.242 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_utilization -file CNN_Accleretor_utilization_synth.rpt -pb CNN_Accleretor_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Sep 20 01:12:51 2025...

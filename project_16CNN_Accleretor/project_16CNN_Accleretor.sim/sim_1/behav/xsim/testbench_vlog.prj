@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_16CNN_Accleretor.srcs/sources_1/new/CNN_Accleretor.v" \
+"../../../../project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v" \
+"../../../../project_16CNN_Accleretor.srcs/sources_1/new/mac9.v" \
+"../../../../project_16CNN_Accleretor.srcs/sources_1/new/max_pool4.v" \
+"../../../../project_16CNN_Accleretor.srcs/sources_1/new/mem_store_index.v" \
+"../../../../project_16CNN_Accleretor.srcs/sources_1/new/pool_pq_index.v" \
+"../../../../project_16CNN_Accleretor.srcs/sources_1/new/pqindex_generetor.v" \
+"../../../../project_16CNN_Accleretor.srcs/sources_1/new/shift_index_generetor.v" \
+"../../../../project_16CNN_Accleretor.srcs/sim_1/new/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,20 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/CNN_Accleretor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_Accleretor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/bram_dual_port1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram_dual_port1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/mac9.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mac9
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/max_pool4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module max_pool4
+INFO: [VRFC 10-311] analyzing module maxi2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/mem_store_index.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_store_index
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/pool_pq_index.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pool_pq_index
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/pqindex_generetor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pqindex_generetor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sources_1/new/shift_index_generetor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_index_generetor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_11/project_16CNN_Accleretor/project_16CNN_Accleretor.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
